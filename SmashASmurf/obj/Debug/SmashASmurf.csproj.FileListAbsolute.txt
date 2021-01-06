@@ -1,0 +1,10 @@
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\bin\Debug\SmashASmurf.exe.config
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\bin\Debug\SmashASmurf.exe
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\bin\Debug\SmashASmurf.pdb
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\obj\Debug\SmashASmurf.csprojAssemblyReference.cache
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\obj\Debug\SmashASmurf.Form1.resources
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\obj\Debug\SmashASmurf.Properties.Resources.resources
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\obj\Debug\SmashASmurf.csproj.GenerateResource.cache
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\obj\Debug\SmashASmurf.csproj.CoreCompileInputs.cache
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\obj\Debug\SmashASmurf.exe
+C:\Users\ericl\ElevenFiftyProjects\SmashASmurf\SmashASmurf\obj\Debug\SmashASmurf.pdb
