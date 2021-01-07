@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblHit = new System.Windows.Forms.Label();
             this.lblMiss = new System.Windows.Forms.Label();
-            this.Smurf = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Smurf = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Smurf)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,7 +47,6 @@
             this.lblHit.Size = new System.Drawing.Size(45, 24);
             this.lblHit.TabIndex = 0;
             this.lblHit.Text = "Hit:";
-            this.lblHit.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblMiss
             // 
@@ -62,22 +60,22 @@
             this.lblMiss.TabIndex = 1;
             this.lblMiss.Text = "Miss:";
             // 
-            // Smurf
-            // 
-            this.Smurf.BackColor = System.Drawing.Color.Transparent;
-            this.Smurf.Image = ((System.Drawing.Image)(resources.GetObject("Smurf.Image")));
-            this.Smurf.Location = new System.Drawing.Point(246, 186);
-            this.Smurf.Name = "Smurf";
-            this.Smurf.Size = new System.Drawing.Size(122, 100);
-            this.Smurf.TabIndex = 2;
-            this.Smurf.TabStop = false;
-            this.Smurf.Click += new System.EventHandler(this.gotSmurf);
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 2000;
-            this.timer1.Tick += new System.EventHandler(this.moveSmurf);
+            this.timer1.Tick += new System.EventHandler(this.MoveSmurf);
+            // 
+            // Smurf
+            // 
+            this.Smurf.BackColor = System.Drawing.Color.Transparent;
+            this.Smurf.Image = global::SmashASmurf.Properties.Resources.Smurf;
+            this.Smurf.Location = new System.Drawing.Point(264, 192);
+            this.Smurf.Name = "Smurf";
+            this.Smurf.Size = new System.Drawing.Size(72, 107);
+            this.Smurf.TabIndex = 2;
+            this.Smurf.TabStop = false;
+            this.Smurf.Click += new System.EventHandler(this.GotSmurf);
             // 
             // Form1
             // 
@@ -102,8 +100,8 @@
 
         private System.Windows.Forms.Label lblHit;
         private System.Windows.Forms.Label lblMiss;
-        private System.Windows.Forms.PictureBox Smurf;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox Smurf;
     }
 }
 

@@ -7,38 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace SmashASmurf
 {
     public partial class Form1 : Form
     {
 
-        Random random = new Random();
+        Random random = new Random(); //Brian is here!
         int locationNumber = 0;
         int score = 0;
         int misses = 0;
         bool isHit = false;
-
+        SoundPlayer hateSound = new SoundPlayer(Properties.Resources.IHateThisWay);
+        SoundPlayer themeSong = new SoundPlayer(Properties.Resources.themeSong);
         public Form1()
         {
             InitializeComponent();
+            MessageBox.Show("Hi");
         }
 
-        private void label1_Click(object sender, EventArgs e)
+       
+        private void GotSmurf(object sender, EventArgs e)
         {
-
-        }
-
-        private void gotSmurf(object sender, EventArgs e)
-        {
+                hateSound.Play();
             score++;
             Smurf.Image = Properties.Resources.GrouchySmurf;
             isHit = true;
             Smurf.Enabled = false;
         }
         
-        private void moveSmurf()
+        private void MoveSmurfs()
         {
+            themeSong.Play();
             isHit = false;
             Smurf.Enabled = true;
             Smurf.Image = Properties.Resources.Smurf;
@@ -48,7 +49,7 @@ namespace SmashASmurf
             
             switch(locationNumber)
             {
-                case 1:
+                case 1: 
                     Smurf.Left = 434;
                     Smurf.Top = 249;
                     break;
@@ -78,7 +79,7 @@ namespace SmashASmurf
             }
 
         }
-        private void moveSmurf(object sender, EventArgs e)
+        private void MoveSmurf(object sender, EventArgs e)
         {
             lblHit.Text = "Hit: " + score;
             lblMiss.Text = "Miss: " + misses;
@@ -98,8 +99,18 @@ namespace SmashASmurf
                 timer1.Stop();
                 Smurf.Enabled = false;
                 MessageBox.Show("You Lose");
+                Reset();
+                
             }
-            moveSmurf();
+            MoveSmurfs();
+        }
+        private void Reset() {
+            locationNumber = 0;
+            score = 0;
+            misses = 0;
+            isHit = false;
+            MoveSmurfs();
+            
         }
     }
 }

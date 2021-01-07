@@ -91,5 +91,17 @@
   <ItemGroup>
     <None Include="Resources\GrouchySmurf.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMURFS SONG %28LaLaLa%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whoops.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IHateThisWay.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\themeSong.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
