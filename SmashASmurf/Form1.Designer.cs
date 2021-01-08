@@ -63,7 +63,7 @@
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 2000;
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.MoveSmurf);
             // 
             // Smurf
@@ -93,7 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Smurf)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
+            this.Cursor = new System.Windows.Forms.Cursor(Properties.Resources.mallet_hammer.GetHicon());
         }
 
         #endregion

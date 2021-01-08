@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Runtime.InteropServices;
+using System.Reflection;
+using System.IO;
 
-namespace SmashASmurf
-{
-    public partial class Form1 : Form
-    {
 
+namespace SmashASmurf {
+    public partial class Form1 : Form {
+        /*this.Cursor = new System.Windows.Forms.Cursor(Properties.Resources.mallet_hammer.GetHicon());*/ //added this line to designer form to change cursor
         Random random = new Random(); //Brian is here!
         int locationNumber = 0;
         int score = 0;
@@ -21,24 +23,21 @@ namespace SmashASmurf
         bool isHit = false;
         SoundPlayer hateSound = new SoundPlayer(Properties.Resources.IHateThisWay);
         SoundPlayer themeSong = new SoundPlayer(Properties.Resources.themeSong);
-        public Form1()
-        {
+        public Form1() {
             InitializeComponent();
             MessageBox.Show("Hi");
         }
 
-       
-        private void GotSmurf(object sender, EventArgs e)
-        {
-                hateSound.Play();
+
+        private void GotSmurf(object sender, EventArgs e) {
+            hateSound.Play();
             score++;
             Smurf.Image = Properties.Resources.GrouchySmurf;
             isHit = true;
             Smurf.Enabled = false;
         }
-        
-        private void MoveSmurfs()
-        {
+
+        private void MoveSmurfs() {
             themeSong.Play();
             isHit = false;
             Smurf.Enabled = true;
@@ -46,10 +45,9 @@ namespace SmashASmurf
             Smurf.BackColor = System.Drawing.Color.Transparent;
 
             locationNumber = random.Next(1, 7);
-            
-            switch(locationNumber)
-            {
-                case 1: 
+
+            switch (locationNumber) {
+                case 1:
                     Smurf.Left = 434;
                     Smurf.Top = 249;
                     break;
@@ -79,28 +77,24 @@ namespace SmashASmurf
             }
 
         }
-        private void MoveSmurf(object sender, EventArgs e)
-        {
+        private void MoveSmurf(object sender, EventArgs e) {
             lblHit.Text = "Hit: " + score;
             lblMiss.Text = "Miss: " + misses;
 
-            if (isHit == false)
-            {
+            if (isHit == false) {
                 misses++;
             }
-            if (score > 9)
-            {
+            if (score > 9) {
                 timer1.Stop();
                 Smurf.Enabled = false;
                 MessageBox.Show("You Win");
             }
-            else if (misses > 5)
-            {
+            else if (misses > 5) {
                 timer1.Stop();
                 Smurf.Enabled = false;
                 MessageBox.Show("You Lose");
                 Reset();
-                
+
             }
             MoveSmurfs();
         }
@@ -110,7 +104,12 @@ namespace SmashASmurf
             misses = 0;
             isHit = false;
             MoveSmurfs();
-            
+
         }
+
+        
+        
+
     }
 }
+

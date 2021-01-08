@@ -18,3 +18,6 @@ C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\SmurfGameWEric\SmashASmurf\SmashA
 C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\SmurfGameWEric\SmashASmurf\SmashASmurf\bin\Debug\SmashASmurf.exe.config
 C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\SmurfGameWEric\SmashASmurf\SmashASmurf\bin\Debug\SmashASmurf.exe
 C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\SmurfGameWEric\SmashASmurf\SmashASmurf\bin\Debug\SmashASmurf.pdb
+C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\SmurfGameWEric\SmashASmurf\SmashASmurf\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\SmurfGameWEric\SmashASmurf\SmashASmurf\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\bpcam\OneDrive\ElevenFiftyProjects\C#\SmurfGameWEric\SmashASmurf\SmashASmurf\obj\Debug\SmashASmurf.csproj.CopyComplete
